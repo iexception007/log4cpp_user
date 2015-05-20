@@ -8,7 +8,9 @@ SRCS = main.cpp logger.cpp
 OBJS = $(SRCS:.cpp=.o)  
 
 #INCLUDE =-I./include
+# 库文件
 LIBS     =-L/usr/local/lib -llog4cpp -lpthread 
+# 指定运行时路径
 RPATH    =-Wl,-rpath=/usr/local/lib 
 
 $(TARGET):$(OBJS)  
